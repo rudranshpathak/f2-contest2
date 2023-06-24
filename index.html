@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoinGecko API Example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <button id="sortMarketCapBtn">Sort by Market Cap</button>
+  <button id="sortPercentageChangeBtn">Sort by Percentage Change</button>
+  <table id="coinTable">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th>Current Price</th>
+        <th>Total Volume</th>
+      </tr>
+    </thead>
+    <tbody id="coinTableBody"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
